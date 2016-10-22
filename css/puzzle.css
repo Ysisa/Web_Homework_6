@@ -1,0 +1,70 @@
+div {
+	
+}
+
+.title {
+	text-align: center;
+	font-size: 100px;
+	margin: 50px;
+}
+
+#button {
+	width: 400px;
+	height: 100px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#restart {
+	color: white;
+	width: 400px;
+	height: 100px;
+	font-size: 50px;
+	background-color: #0088FF;
+	box-shadow: 10px 10px 3px gray;
+}
+
+#puzzle-container {
+	width: 1024px;
+	height: 1024px;
+	margin: auto;
+	position: relative;
+}
+
+.block {
+	width: 24.8%;
+	height: 24.8%;
+	position: absolute;
+	background: url(../img/panda.jpg);
+	background-size: 400%;
+	z-index: 0;
+	border: 1px solid gray;
+	transition: all 0.3s;
+}
+
+.block:hover {
+	transform: scale(1.05);
+	z-index: 100;
+}
+
+#b0 {background-position: 0% 0%;}
+#b1 {background-position: 33.33% 0%;}
+#b2 {background-position: 66.66% 0%;}
+#b3 {background-position: 99.99% 0%;}
+
+#b4 {background-position: 0% 33.33%;}
+#b5 {background-position: 33.33% 33.33%;}
+#b6 {background-position: 66.66% 33.33%;}
+#b7 {background-position: 99.99% 33.33%;}
+
+#b8 {background-position: 0% 66.66%;}
+#b9 {background-position: 33.33% 66.66%;}
+#b10 {background-position: 66.66% 66.66%;}
+#b11 {background-position: 99.99% 66.66%;}
+
+#b12 {background-position: 0% 99.99%;}
+#b13 {background-position: 33.33% 99.99%;}
+#b14 {background-position: 66.66% 99.99%;}
+#b15 {background: none; border: none;}
+
+#b15:hover {transform: none; z-index: 0;}
